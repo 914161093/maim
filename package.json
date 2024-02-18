@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "mobile-select": "^1.4.0"
+  },
+  "dependencies": {
+    "jweixin-module": "^1.6.0"
+  }
+}

@@ -1,0 +1,65 @@
+/* 水平间距 */
+/* 水平间距 */
+.container {
+  padding: 0.83333rem 1.41667rem;
+}
+.container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .top .sources {
+  display: flex;
+  justify-content: space-between;
+}
+.container .top .sources .img {
+  width: 2.39583rem;
+  height: 2.39583rem;
+  border-radius: 50%;
+}
+.container .top .sources .name {
+  margin-left: 0.52083rem;
+}
+.container .top .sources .name .title {
+  font-size: 0.83333rem;
+  color: #272727;
+  margin-bottom: 0.3125rem;
+}
+.container .top .sources .name .time {
+  font-size: 0.625rem;
+  color: #b1b1b1;
+}
+.container .top .follow {
+  padding: 0 1.09375rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  background: #ffa800;
+  color: #fff;
+  font-size: 0.8125rem;
+  border-radius: 0.9375rem;
+}
+.container .detail {
+  margin-top: 1.14583rem;
+  border-radius: 0.5625rem;
+  background: #fff;
+  padding: 1.25rem;
+  box-shadow: 8px 10px 12px #ddd;
+}
+.container .detail .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.container .detail .text {
+  font-size: 0.9375rem;
+}
+.container .detail .text img {
+  max-width: 100%;
+}
+.container .detail p {
+  margin: 0.625rem 0;
+}
+.container .detail h4 {
+  margin: 0.625rem 0;
+}

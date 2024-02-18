@@ -1,0 +1,13 @@
+{
+  "hash": "852184c5",
+  "browserHash": "fce21c2e",
+  "optimized": {
+    "mobile-select": {
+      "src": "../../node_modules/mobile-select/dist/mobile-select.es.js",
+      "file": "mobile-select.js",
+      "fileHash": "839dec57",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

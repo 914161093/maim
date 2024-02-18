@@ -1,0 +1,188 @@
+{
+	//路由
+	"pages": [
+	{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "麦麦"
+		}
+	},
+	{
+		"path": "pages/about/about",
+		"style": {
+			"navigationBarTitleText" : "关于我们"
+		}
+	},
+	{
+		"path" : "pages/login/login",
+		"style" : 
+		{
+			"navigationBarTitleText" : "登录",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/knowledgedetail/knowledgedetail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "金融知识",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/corporateloan/corporateloan",
+		"style" : 
+		{
+			"navigationBarTitleText" : "企业融资",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/housingloan/housingloan",
+		"style" : 
+		{
+			"navigationBarTitleText" : "房屋抵押贷款",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/autoloan/autoloan",
+		"style" : 
+		{
+			"navigationBarTitleText" : "车抵贷咨询",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/overdue/overdue",
+		"style" : 
+		{
+			"navigationBarTitleText" : "逾期咨询",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/largeloan/largeloan",
+		"style" : 
+		{
+			"navigationBarTitleText" : "大额信贷咨询",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/institutionlist/institutionlist",
+		"style" : 
+		{
+			"navigationBarTitleText" : "借钱优选",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/my/my",
+		"style" : 
+		{
+			"navigationBarTitleText" : "个人中心",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/setting/setting",
+		"style" : 
+		{
+			"navigationBarTitleText" : "账号设置",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/agreement/agreement",
+		"style" : 
+		{
+			"navigationBarTitleText" : "平台协议",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/personalinfo/personalinfo",
+		"style" : 
+		{
+			"navigationBarTitleText" : "个人信息",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/feedback/feedback",
+		"style" : 
+		{
+			"navigationBarTitleText" : "意见反馈",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/webview/webview",
+		"style" : 
+		{
+			"navigationBarTitleText" : "",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/mate/mate",
+		"style" : 
+		{
+			"navigationBarTitleText" : "匹配列表",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/application/application",
+		"style" : 
+		{
+			"navigationBarTitleText" : "我的申请",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/privacysettings/privacysettings",
+		"style" : 
+		{
+			"navigationBarTitleText" : "隐私设置",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/logoff/logoff",
+		"style" : 
+		{
+			"navigationBarTitleText" : "注销账户",
+			"enablePullDownRefresh" : false
+		}
+	}],
+	//全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	//底部菜单
+	"tabBar": {
+		"color": "#292929",
+		"selectedColor": "#ffa800",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar_home_unchecked.png",
+			"selectedIconPath": "static/tabbar_home_checked.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/tabbar_my_unchecked.png",
+			"selectedIconPath": "static/tabbar_my_checked.png",
+			"text": "我的"
+		}]
+	}
+}
