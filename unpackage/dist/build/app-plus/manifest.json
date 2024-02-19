@@ -76,9 +76,9 @@
       "splashscreen": {
         "androidStyle": "default",
         "android": {
-          "hdpi": "C:/Users/lipeng39/Desktop/welcome.png",
-          "xhdpi": "C:/Users/lipeng39/Desktop/welcome.png",
-          "xxhdpi": "C:/Users/lipeng39/Desktop/welcome.png"
+          "hdpi": "",
+          "xhdpi": "",
+          "xxhdpi": ""
         },
         "useOriginalMsgbox": true,
         "iosStyle": "common"
@@ -117,7 +117,7 @@
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "3.98",
+      "compilerVersion": "3.99",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {

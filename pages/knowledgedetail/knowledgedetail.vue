@@ -69,6 +69,25 @@
 					},
 					method: 'POST',
 			    });
+				uni.request({
+					url: 'https://api.maimangbox.cn/content',
+					data:{
+						key:key
+					},
+					header: {
+						'content-type': 'application/json',
+						'api-token': token
+					},
+					method: 'POST',
+					success: (res) => {console.log(res)
+						if(res.data.resultCode ==10000){
+							this.detailData = res.data.data;
+							console.log(this.detailData)
+						}else{
+							uni.showToast({title:res.data.resultMsg, icon:"none"});
+						}
+					}
+				});
 			  } catch (err) {
 			    console.error(err);
 			  }
@@ -93,7 +112,7 @@
 							this.detailData = res.data.data;
 							console.log(this.detailData)
 						}else{
-							getToken()
+							uni.showToast({title:res.data.resultMsg, icon:"none"});
 						}
 					}
 				});

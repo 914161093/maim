@@ -70,9 +70,9 @@
             "splashscreen" : {
                 "androidStyle" : "default",
                 "android" : {
-                    "hdpi" : "C:/Users/lipeng39/Desktop/welcome.png",
-                    "xhdpi" : "C:/Users/lipeng39/Desktop/welcome.png",
-                    "xxhdpi" : "C:/Users/lipeng39/Desktop/welcome.png"
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : ""
                 },
                 "useOriginalMsgbox" : true,
                 "iosStyle" : "common"
