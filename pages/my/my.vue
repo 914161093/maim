@@ -55,8 +55,8 @@
 				method: 'POST',
 				success: (res) => {
 					if(res.data.resultCode ==10000){
-						this.name = res.data.data.userInfo.name;
-						this.channel = res.data.data.channel;
+						this.name = res.data.data.userInfo.name||'';
+						this.channel = res.data.data.channel || '';
 					}else{
 						uni.navigateTo({
 							url: '/pages/login/login'

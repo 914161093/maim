@@ -5,7 +5,7 @@
 			<view class="t-b">
 				<image src="../../static/login_bg.png" class="logo" mode="widthFix"></image>
 				<view>
-					<view class="title">智能金融,管家服务</view>
+					<view class="title">智能管家服务</view>
 					<view class="subtitle">麦麦</view>
 				</view>
 			</view>

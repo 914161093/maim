@@ -30,6 +30,38 @@
 		}
 	},
 	{
+		"path" : "pages/knowledgedetail1/knowledgedetail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "常见问题",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/knowledgedetail2/knowledgedetail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "常见问题",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/knowledgedetail3/knowledgedetail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "服务协议",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/knowledgedetail4/knowledgedetail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "隐私政策",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
 		"path" : "pages/corporateloan/corporateloan",
 		"style" : 
 		{
