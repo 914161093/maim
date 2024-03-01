@@ -1,0 +1,184 @@
+<template>
+	<view class="container">
+		<view class="top">
+			<view class="sources">
+				<view class="name">
+					<view class="title" style="font-size:36rpx;">网络购物维权五大问题及应对方法</view>
+					<view class="time">2023/12/30</view>
+				</view>
+			</view>
+		</view>
+		<view class="detail">
+			<view class="texts">以下方法皆为安安君结合所学知识以及自身经验整理得出的，如有不当之处，还望多多海涵。
+希望这篇文章能够帮到大家。
+</view>
+<view class="texts">
+	<strong class="title">01买家购买商品后，卖家拒绝发货。</strong>
+	<view>作为消费者，当我们在电商平台下单，并支付了价款后，买卖合同就已经成立。此时，如果商家拒绝发货，我们是有要求商家继续履行买卖合同即按时发货的权利的，如果商家摆出一副高傲的姿态，我们可以采取以下方式教其做人：
+	</view>
+	<strong class="title">1、向商家所在的电商平台投诉商家的违法行为，我们与商家的聊天记录就是最好的证据，让平台对商家做出相应的处罚。</strong>
+	<strong class="title">2、向消协等消费者维权机构投诉，请求消费者维权机构协助我们维权，处理此事。</strong>
+	<strong class="title">3、向工商部门进行举报或者向有管辖权的法院提起民事诉讼。</strong>
+	<strong class="title">4、向维权类自媒体寻求帮助，向自己所在学校的自媒体寻求帮助。</strong>
+</view>
+<view class="texts">
+	<strong class="title">02收到快递，发现实物存在产品质量问题。</strong>
+	<view class="ptext">根据《中华人民共和国消费者权益保护法》第二十四条的规定，经营者提供的商品或者服务不符合质量要求的，消费者可以依照国家规定、当事人约定退货，或者要求经营者履行更换、修理等义务。没有国家规定和当事人约定的，消费者可以自收到商品之日起七日内退货；七日后符合法定解除合同条件的，消费者可以及时退货，不符合法定解除合同条件的，可以要求经营者履行更换、修理等义务。
+	</view>
+	<view class="ptext">此外，根据《中华人民共和国消费者权益保护法》的有关规定，商家提供商品或者服务有欺诈行为，应当按照消费者的要求增加赔偿其受到的损失，增加赔偿的金额为消费者购买商品价格或者接受服务的费用的3倍；增加赔偿的金额不足500的，为500元。就是说我们在面对商家知假卖假时，除了要求商家退回我们的付款外，还可以要求商家承担一定的赔偿责任，原则上是退一赔三，五百保底。
+	</view>
+	<view class="ptext">如果我们购买到的是不符合食品安全标准的食品，除了要求商家赔偿损失外，还可以向商家要求支付价款的十倍或者损失三倍的赔偿金，增加赔偿的金额不足一千元的，为一千元。这比一般性规定的退一赔三，五百保底对商家的惩罚更为严厉。</view>
+	<view class="ptext">如果我们真的购买到了存在产品质量问题的商品，在与商家协商的时候，我们可以把上述法条发给商家，表明自己的维权是有依据的，如果协商不成，将采取法律手段维权。一般来说，商家面对这种懂法的消费者，尤其是法学专业的消费者，会积极与消费者进行协商，解决纠纷，
+如果商家不知好歹，继续高傲，我们是可以选择死磕的，在学法用法的同时给商家普法，只要我们认真，最后认输的很大概率是商家。
+	</view>
+</view>
+<view class="texts">
+	<strong class="title">03快递损毁或丢失</strong>
+	<view class="ptext">个人建议，如果我们取件时发现快递破损，可以选择拒收快递。如果一定要接收破损快递的话，牢记开快递的时候一定要录像，如果后期需要维权的话，这是我们最有力的证据。
+	</view>
+	<view class="ptext">如果发生快递毁损或丢失，我们首先要做的是找到责任方，明确到底是商家、快递公司的单独责任还是多方的共同责任。当然，如果我们找不出来到底是谁的责任的话，可以要求商家帮我们找，一般来说商家都会积极帮忙，从而撇清自己的责任的。
+	</view>
+	<view class="ptext">如果对于商家或者快递公司的服务不满意，我们可以向消费者维权机构投诉，请求帮助。如果确认是快递公司的问题，我们可以向国家邮政局申诉，一般来说，申诉之后的第二天，快递公司就会给你打电话，解决问题。</view>
+	<view class="ptext">当然，必要时，我们可以通过向法院起诉维护自己的合法权益。
+	</view>
+</view>
+<view class="texts">
+	<strong class="title">04网购时商家规定一旦购买，概不退换</strong>
+	<view class="ptext">《中华人民共和国合同法》第四十条规定，提供格式条款一方免除其责任、加重对方责任、排除对方主要权利的，该条款无效。所以商家所谓的商品一旦购买，概不退换的规定在法律上是无效的，就是一句废话，我们没有必要理会，至于商家为什么在明知此规定无法律效力的情况下仍然要规定，当然是为了坑那些不懂法的消费者啊（由此可见，商家是多么的鸡贼，懂法是多么的重要）
+	</view>
+	<view class="ptext">既然该规定本身就是无效的，那么我们收到的商品存在产品质量问题的话，直接按照问题三进行维权就行了。
+	</view>
+</view>
+<view class="texts">
+	<strong class="title">05七天无理由退货的注意事项</strong>
+	<view class="ptext">我国法律规定，无论经营者提供的商品有无质量问题，只要是采用网络、电视、电话、邮购等方式销售的，消费者都有权自商品收到之日起7日内退货，且无需说明理由。这就是所谓的“七天无理由退货”。
+	</view>
+	<view class="ptext">但是，我们需要注意的是，消费者定做的商品、鲜活易腐的商品、在线下载或者消费者拆封的音像制品、计算机软件等数字化商品，交付的报纸、期刊以及其他根据商品性质并经消费者购买时确认不易退货的商品，不适用无理由退货的规定。
+	</view>
+	<view class="ptext">我们如果要退货，需要保证商品的完整性，某些商品虽然我们拆封了，但是并不影响商品的完整性的话，商家无法以此为理由拒不同意退货的。
+	</view>
+	<view class="ptext">退回商品的运费由消费者承担，如果消费者与经营者另有约定的，从其约定。
+	</view>
+	<view class="ptext">当然，如果我们是因为产品质量问题有理由退货，经营者是要承担运费的，这个时候千万不要自己傻傻的承担运费。
+	</view>
+</view>
+<view class="texts">
+	<strong class="title">附消费者维权渠道</strong>
+	<view class="ptext">工商部门：12315
+	</view>
+	<view class="ptext">质监部门：12316
+	</view>
+	<view class="ptext">国家邮政局申诉官网<a href="http://sswz.spb.gov.cn/">http://sswz.spb.gov.cn/</a>
+	</view>
+	<view class="ptext">退回商品的运费由消费者承担，如果消费者与经营者另有约定的，从其约定。
+	</view>
+	<view class="ptext">当然，如果我们是因为产品质量问题有理由退货，经营者是要承担运费的，这个时候千万不要自己傻傻的承担运费。
+	</view>
+</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				detailData:'',
+				content:''
+			};
+		},
+		methods: {
+			shareFn(title){
+				uni.share({
+					provider: "weixin",
+					scene: "WXSceneSession",
+					type: 1,
+					summary: title,
+					success: function (res) {
+						console.log("success:" + JSON.stringify(res));
+					},
+					fail: function (err) {
+						console.log("fail:" + JSON.stringify(err));
+					}
+				});
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+.container{
+	padding: 26.6667rpx 45.3333rpx;
+	.top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.sources{
+			display: flex;
+			justify-content: space-between;
+			.img{
+				width: 76.6667rpx;
+				height: 76.6667rpx;
+				border-radius: 50%;
+			}
+			.name{
+				margin-left: 16.6667rpx;
+				.title{
+					font-size: 26.6667rpx;
+					color:#272727;
+					margin-bottom: 10rpx;
+				}
+				.time{
+					font-size: 20rpx;
+					color:#b1b1b1;
+				}
+			}
+		}
+		.follow{
+			padding:0 35rpx;
+			height: 40rpx;
+			line-height:40rpx;
+			text-align: center;
+			background: #ffa800;
+			color:#fff;
+			font-size: 26rpx;
+			border-radius:30rpx;
+		}
+	}
+	.detail{
+		margin-top: 36.6667rpx;
+		border-radius: 18rpx;
+		background:#fff;
+		padding: 40rpx;
+		box-shadow: 8px 10px 12px #ddd;
+		.texts{
+			padding:20rpx 0;
+			.title{
+				font-size:32rpx;
+				display: block;
+				margin: 20rpx 0;
+			}
+			.ptext{
+				padding:20rpx 0;
+			}
+		}
+		.title{
+			font-size:40rpx;
+			font-weight:600;
+			margin-bottom: 40rpx;
+		}
+		.text{
+			font-size:30rpx;
+			img{
+				max-width:100%;
+			}
+		}
+		p{
+			margin:20rpx 0;
+		}
+		h4{
+			margin:20rpx 0;
+		}
+	}
+}	
+</style>
