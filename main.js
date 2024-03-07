@@ -60,7 +60,7 @@ export function createApp() {
 			method: 'POST',
 	    });
 	    // 此处的 res 参数，与使用默认方式调用时 success 回调中的 res 参数一致
-	    if(res.data.resultCode == 10000){console.log("main10000")
+	    if(res.data.resultCode == 10000){
 			 uni.setStorageSync('token', res.data.data);
 		}else{console.log(res)
 			 uni.setStorageSync('token', '');
@@ -72,7 +72,7 @@ export function createApp() {
 	  }
 	}	
 	
-	if(token == ''){console.log('main')
+	if(token == ''){
 		getToken();
 	}
 	

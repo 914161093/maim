@@ -133,7 +133,6 @@
 				productList:[],
 				articleList:[],
 				showHome:false,
-				approved:false,
 				noData:false
 			}
 		},
@@ -250,7 +249,6 @@
 				}
 			}
 			
-			
 				
 			if(token == ''){
 				getToken();
@@ -272,27 +270,6 @@
 					});
 				}
 				// #endif
-
-				var res = await uni.request({
-					url: 'https://api.maimangbox.cn/system',
-					data: {},
-					header: {
-						'content-type': 'application/json',
-						'api-token': uni.getStorageSync('token')
-					},
-					method: 'POST',
-				});
-				 console.log(res1)
-				// if(res.data.resultCode == 10000){
-				// 	_this.showHome = true;
-				// 	_this.noData = false;
-				// 	_this.productList = res.data.data.productList;
-				// 	_this.articleList = res.data.data.article;
-				// }else{
-				// 	uni.showToast({title:res.data.resultMsg, icon:"none"});
-				// 	getToken();
-				// }
-				
 			}else{
 				getHome()
 			}
