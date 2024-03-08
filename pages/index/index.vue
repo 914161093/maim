@@ -1,6 +1,129 @@
 <template>
 	<view class="page">
-	<view class="container" v-if="showHome">
+	<view class="container" v-if="status">
+		<view class="top-info">
+			<view class="title"><image src="../../static/xin_logo.png" class="xin_logo"></image>麦麦 | 一站式咨询服务</view>
+			<view class="subtitle">个人大额信贷</view>
+			<view class="edu">最高可获得额度(元)</view>
+			<view class="money">200,000</view>
+			<view class="">年化利润率：6~18%</view>
+			<button class="applyNow" @click="goToLoanPage('/pages/largeloan/largeloan')">立即申请</button>
+			<view class="kouh">额度高 | 利息低 | 放款快</view>
+		</view>
+		<view class="scroll_box">
+			<image src="../../static/luck_bg.png" class="scroll_bg"></image>
+			<view class="scroll_text">
+				<image src="../../static/notification.png" class="notification"></image>
+				<text>恭喜维护8930的用户获得个人信用贷款解决方案</text>
+			</view>
+		</view>
+		<view class="tab_box">
+			<view class="tab_list" @click="goToLoanPage('/pages/corporateloan/corporateloan')">
+				<image src="../../static/enterprise.png" class="tab_pic"></image>
+				<text class="tab_name">企业融资</text>
+			</view>
+			<view class="tab_list" @click="goToLoanPage('/pages/housingloan/housingloan')">
+				<image src="../../static/house.png" class="tab_pic"></image>
+				<text class="tab_name">房产抵押</text>
+			</view>
+			<view class="tab_list" @click="goToLoanPage('/pages/autoloan/autoloan')">
+				<image src="../../static/car.png" class="tab_pic"></image>
+				<text class="tab_name">车辆抵押</text>
+			</view>
+			<view class="tab_list" @click="goToLoanPage('/pages/overdue/overdue')">
+				<image src="../../static/overdue.png" class="tab_pic"></image>
+				<text class="tab_name">逾期上岸</text>
+			</view>
+		</view>
+		<view class="jig_box">
+			<view class="com_title">
+				<text class="title_text">优选产品</text>
+				<text class="title_more" @click="goToLoanPage('/pages/institutionlist/institutionlist')">查看更多 >></text>
+			</view>
+			<view class="jig_list">
+				<view class="jig_item" v-for="item in productList">
+					<view class="jig_info">
+						<view class="jig_left">
+							<view class="jig_title">{{item.title}}</view>
+							<view class="jig_highest">最高可借(元)</view>
+							<view class="jig_price">
+								<text class="currency">￥</text>
+								<text class="price">{{item.max_price}}0000</text>
+							</view>
+						</view>
+						<view class="jig_logo">
+							<image :src="item.icon" class="jig_logo_img"></image>
+						</view>
+					</view>
+					<button class="jig_apply" @click="listApplyBtn(item.url,item.id)" >立即申请</button>
+				</view>
+			</view>
+		</view>
+		<view class="knows">
+			<view class="com_title">
+				<text class="title_text">金融知识</text>
+			</view>
+			<view class="knows_list">
+				<view class="item" v-for="item in articleList" @click="goToKnowledgeDetail(item.key)">
+					<view class="item_info">
+						<view class="item_title">{{item.source_title}}</view>
+						<view class="item_time">{{item.source_date}}</view>
+					</view>
+					<image :src="item.source_logo" class="item_img"></image>
+				</view>
+			</view>
+		</view>
+		<view class="advantage">
+			<view class="title">我们的优势</view>
+			<view class="list">
+				<view class="item">
+					<image src="../../static/yous_01.png" class="img"></image>
+					<view class="text">专业服务体系<br>多年从业经验</view>
+				</view>
+				<view class="item">
+					<image src="../../static/yous_02.png" class="img"></image>
+					<view class="text">省心高效<br>专业资深团队</view>
+				</view>
+				<view class="item">
+					<image src="../../static/yous_03.png" class="img"></image>
+					<view class="text">专业细致<br>一对一服务</view>
+				</view>
+				<view class="item">
+					<image src="../../static/yous_04.png" class="img"></image>
+					<view class="text">保障安全<br>保密个人信息安全</view>
+				</view>
+			</view>
+		</view>
+		<view class="advantage">
+			<view class="title">服务流程</view>
+			<view class="process_list">
+				<view class="item">
+					<image src="../../static/flow_01.png" class="img"></image>
+					<view class="text">了解客户<br>需求情况</view>
+				</view>
+				<image src="../../static/arrow_r_h.png" class="arrow"></image>
+				<view class="item">
+					<image src="../../static/flow_02.png" class="img"></image>
+					<view class="text">签收正规<br>授权合同</view>
+				</view>
+				<image src="../../static/arrow_r_h.png" class="arrow"></image>
+				<view class="item">
+					<image src="../../static/flow_03.png" class="img"></image>
+					<view class="text">专业服务<br>制定方案</view>
+				</view>
+				<image src="../../static/arrow_r_h.png" class="arrow"></image>
+				<view class="item">
+					<image src="../../static/flow_04.png" class="img"></image>
+					<view class="text">协助指导<br>放款流程</view>
+				</view>
+			</view>
+		</view>
+		<view class="foot">
+			<view class="title">借钱优选</view>
+			<view class="text">平台为综合金融咨询服务平台，不为学生/未满18周岁用户提供服务</view>
+		</view>
+	</view>
+	<view class="container" v-else>
 		<image src="../../static/0185065a6dbe99a80120a123847aad.jpg" style="width:100%;border-radius: 20rpx;"></image>
 		<!-- <view class="top-info">
 			<view class="title"><image src="../../static/xin_logo.png" class="xin_logo"></image>麦麦 | 一站式咨询服务</view>
@@ -133,7 +256,8 @@
 				productList:[],
 				articleList:[],
 				showHome:false,
-				noData:false
+				noData:false,
+				status:false
 			}
 		},
 		onShow() {
@@ -249,10 +373,30 @@
 				}
 			}
 			
+			async function getStatus(){
+				var res = await uni.request({
+					url: 'https://api.maimangbox.cn/system',
+					data: {
+					},
+					header: {
+						'content-type': 'application/json',
+						'api-token': token
+					},
+					method: 'POST',
+				});
+				if(res.data.resultCode == 10000){
+					if(res.data.data!=='no'){
+						_this.status = true;
+						getHome();
+					}
+				}else{
+					getToken();
+				}
+			}
 				
 			if(token == ''){
 				getToken();
-				
+				getStatus();
 				// #ifdef  APP-PLUS
 				if(uni.getSystemInfoSync().platform == "ios"){
 					uni.getNetworkType({
@@ -271,7 +415,7 @@
 				}
 				// #endif
 			}else{
-				getHome()
+				getStatus();
 			}
 			 // getToken().then(res){
 				//  console.log(res)
@@ -370,6 +514,11 @@
 			goToLoanPage(url){
 				uni.navigateTo({
 					url: url
+				});
+			},
+			goToKnowledgeDetail(key){
+				uni.navigateTo({
+					url: '/pages/knowledgedetail/knowledgedetail?key='+ key
 				});
 			},
 			goToKnowledgeDetail1(key){

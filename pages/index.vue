@@ -1,8 +1,7 @@
 <template>
 	<view class="page">
 	<view class="container" v-if="showHome">
-		<image src="../../static/0185065a6dbe99a80120a123847aad.jpg" style="border-radius: 20rpx;"></image>
-		<!-- <view class="top-info">
+		<view class="top-info">
 			<view class="title"><image src="../../static/xin_logo.png" class="xin_logo"></image>麦麦 | 一站式咨询服务</view>
 			<view class="subtitle">个人大额信贷</view>
 			<view class="edu">最高可获得额度(元)</view>
@@ -10,7 +9,7 @@
 			<view class="">年化利润率：6~18%</view>
 			<button class="applyNow" @click="goToLoanPage('/pages/largeloan/largeloan')">立即申请</button>
 			<view class="kouh">额度高 | 利息低 | 放款快</view>
-		</view> -->
+		</view>
 		<view class="scroll_box">
 			<image src="../../static/luck_bg.png" class="scroll_bg"></image>
 			<view class="scroll_text">
