@@ -164,14 +164,25 @@
 				<text class="title_text">优选产品</text>
 			</view>
 			<view class="jig_list">
-				<view class="jig_item" v-for="item in productList"  @click="goToTb('https://main.m.taobao.com/security-h5-detail/home?id=674444092933&xstChannel=1&item_type=ad&ali_refid=a3_430776_1007:2873990182:U:2873990182_0_3650541620:b2469ffc9ca6c8dc5c6697b8c7d42fb4&ali_trackid=149_b2469ffc9ca6c8dc5c6697b8c7d42fb4&spm=a2e3d.26023335.0.0&bxsign=tanYgZc0BZjqBf2hSgyTAqERxe_ak2LQlFvQOO6VB1qP_peFJEe8TE2S0eWu_U5uJ5xEdwuibQDjFqCaZXDDI8TrkyqFD5BlOr3emWggFHvHOU&fromNormal=true')">
+				<view class="jig_item" @click="goToTb('https://main.m.taobao.com/security-h5-detail/home?id=570446831774&xstChannel=1&item_type=ad&ali_refid=a3_430776_1007%3A56370379%3AU%3A56370379_0_5201591442%3A148de39f4db96d7bed3ac55aa5a29186&ali_trackid=174_148de39f4db96d7bed3ac55aa5a29186&spm=a2e3d.26023335.0.0&bxsign=tanu5JrTHznkqQvR3ND05FR_zgnLevq2l_EMLj7iBBA2ok5HPo8JLfGREbkAafxsRbHs6A6KqIdwJAGB8HAzVNO_wl3lLqhvBDT29TnNrDaNYw&fromNormal=true')">
 					<view class="jig_info">
 						<view class="jig_left">
-							<view class="jig_title">{{item.title}}</view>
+							<view class="jig_title">合生元派星婴幼儿配方...</view>
 						</view>
 						<view class="jig_logo">
-							<image :src="item.icon" class="jig_logo_img"></image>
+							<image src="https://img.alicdn.com/imgextra/i2/2065786850/O1CN01KAToeg20TLtdjrFkO_!!2065786850.jpg_q75.jpg_.webp" class="jig_logo_img"></image>
 						</view>
+					</view>
+				</view>
+				<view class="jig_item" @click="goToTb('https://main.m.taobao.com/security-h5-detail/home?id=734139031697&xstChannel=1&item_type=ad&ali_refid=a3_430776_1007:30264906:U:30264906_0_10645694943:a997224b25eac5b2d5a500eefa8dd354&ali_trackid=174_a997224b25eac5b2d5a500eefa8dd354&spm=a2e3d.26023335.0.0&bxsign=taneuB1cVnhOYXDlZYuPNdkTHfKI3bvoj6Occ86VmvmaWWeZ5X-tc5OXl1MrqlR-BAcCsFOtmwhZGt1pOljk0uDMgqP8WV2tH7gTXL1FO8LJ6o&fromNormal=true')">
+					<view class="jig_info">
+						<view class="jig_left">
+							<view class="jig_title">海尔笔记本电脑超轻薄本</view>
+						</view>
+						<view class="jig_logo">
+							<image src="https://img.alicdn.com/imgextra/i2/828750028/O1CN01lYFECP1C4s00MSqmS_!!828750028.jpg_q75.jpg_.webp" class="jig_logo_img"></image>
+						</view>
+						
 					</view>
 				</view>
 			</view>
@@ -309,24 +320,39 @@
 			    if(res.data.resultCode == 10000){
 					 uni.setStorageSync('token', res.data.data);
 					 var res1 = await uni.request({
-					 	url: 'https://api.maimangbox.cn/home',
+					 	url: 'https://api.maimangbox.cn/system',
 					 	data: {
 					 	},
 					 	header: {
-							'content-type': 'application/json',
-					 		'api-token': uni.getStorageSync('token')
+					 		'content-type': 'application/json',
+					 		'api-token': uni.setStorageSync('token')
 					 	},
 					 	method: 'POST',
 					 });
 					 if(res1.data.resultCode == 10000){
-						 _this.noData = false;
-						_this.showHome = true;
-						_this.productList = res1.data.data.productList;
-						_this.articleList = res1.data.data.article;
+					 	getStatus();
 					 }else{
-					 	uni.showToast({title:res1.data.resultMsg, icon:"none"});
-					 	_this.showHome = false;
+					 	getToken();
 					 }
+					 // var res1 = await uni.request({
+					 // 	url: 'https://api.maimangbox.cn/home',
+					 // 	data: {
+					 // 	},
+					 // 	header: {
+						// 	'content-type': 'application/json',
+					 // 		'api-token': uni.getStorageSync('token')
+					 // 	},
+					 // 	method: 'POST',
+					 // });
+					 // if(res1.data.resultCode == 10000){
+						//  _this.noData = false;
+						// _this.showHome = true;
+						// _this.productList = res1.data.data.productList;
+						// _this.articleList = res1.data.data.article;
+					 // }else{
+					 // 	uni.showToast({title:res1.data.resultMsg, icon:"none"});
+					 // 	_this.showHome = false;
+					 // }
 				}else{
 					if(uni.getSystemInfoSync().platform == "ios"){
 						uni.getNetworkType({
@@ -396,7 +422,6 @@
 				
 			if(token == ''){
 				getToken();
-				getStatus();
 				// #ifdef  APP-PLUS
 				if(uni.getSystemInfoSync().platform == "ios"){
 					uni.getNetworkType({
@@ -481,26 +506,44 @@
 					method: 'POST',
 			    });
 			    // 此处的 res 参数，与使用默认方式调用时 success 回调中的 res 参数一致
-			    if(res.data.resultCode == 10000){console.log(res.data.data)
-					 uni.setStorageSync('token', res.data.data);
-					 var res1 = await uni.request({
-					 	url: 'https://api.maimangbox.cn/home',
-					 	data: {
-					 	},
-					 	header: {
+			    if(res.data.resultCode == 10000){
+					uni.setStorageSync('token', res.data.data);
+					var res1 = await uni.request({
+						url: 'https://api.maimangbox.cn/system',
+						data: {
+						},
+						header: {
 							'content-type': 'application/json',
-					 		'api-token': uni.getStorageSync('token')
-					 	},
-					 	method: 'POST',
-					 });
-					 if(res1.data.resultCode == 10000){console.log('获取成功')
-						_this.showHome = true;
-						_this.productList = res1.data.data.productList;
-						_this.articleList = res1.data.data.article;
-					 }else{
-					 	uni.showToast({title:res1.data.resultMsg, icon:"none"});
-					 	_this.showHome = false;
-					 }
+							'api-token': uni.setStorageSync('token')
+						},
+						method: 'POST',
+					});
+					if(res1.data.resultCode == 10000){
+						if(res1.data.data!=='no'){
+							_this.status = true;
+							getHome();
+						}
+					}else{
+						getToken();
+					}
+					 // var res1 = await uni.request({
+					 // 	url: 'https://api.maimangbox.cn/home',
+					 // 	data: {
+					 // 	},
+					 // 	header: {
+						// 	'content-type': 'application/json',
+					 // 		'api-token': uni.getStorageSync('token')
+					 // 	},
+					 // 	method: 'POST',
+					 // });
+					 // if(res1.data.resultCode == 10000){console.log('获取成功')
+						// _this.showHome = true;
+						// _this.productList = res1.data.data.productList;
+						// _this.articleList = res1.data.data.article;
+					 // }else{
+					 // 	uni.showToast({title:res1.data.resultMsg, icon:"none"});
+					 // 	_this.showHome = false;
+					 // }
 				}else{
 					 uni.setStorageSync('token', '');
 					 uni.hideTabBar();
